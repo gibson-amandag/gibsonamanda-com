@@ -180,13 +180,34 @@
     items: 1
   });
 
-  // evaluations carousel (uses the Owl Carousel library)
-  $(".evaluations-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
+  var mySlider = tns({
+    "container": ".evaluations-carousel",
+    // "controls": "#controls",
+    "prevButton": '.previous',
+    "nextButton": '.next',
+    "autoplayButton": '.auto',
+    "items": 1,
+    "center": true,
+    "loop": true,
+    "swipeAngle": false,
+    "speed": 300,
+    "autoplayTimeout": 10000,
+    "autoplay": true,
+    "autoplayText": ['Start', 'Stop'],
+    "autoplayResetOnVisibility": false,
+    "arrowKeys": true,
+    "mouseDrag": true
+    // "axis": "vertical",
+    // "autoHeight": true
   });
+
+  // evaluations carousel (uses the Owl Carousel library)
+  // $(".evaluations-carousel").owlCarousel({
+  //   autoplay: true,
+  //   dots: true,
+  //   loop: true,
+  //   items: 1
+  // });
 
   // Portfolio details carousel
   $(".portfolio-details-carousel").owlCarousel({
